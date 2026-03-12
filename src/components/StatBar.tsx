@@ -1,7 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default function StatBar({ name, value, diff }) {
+interface StatBarProps {
+  name: string;
+  value: number;
+  diff: number;
+}
+
+export default function StatBar({ name, value, diff }: StatBarProps) {
 
   const maxStat = 255;
   const width = (value / maxStat) * 100;

@@ -1,4 +1,4 @@
-export const getGeneration = (id) => {
+export const getGeneration = (id: number) => {
   if (id <= 151) return 1;
   if (id <= 251) return 2;
   if (id <= 386) return 3;
